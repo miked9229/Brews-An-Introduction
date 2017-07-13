@@ -1,0 +1,6 @@
+framework module Pods_Brews__An_IntroductionUITests {
+  umbrella header "Pods-Brews: An IntroductionUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
