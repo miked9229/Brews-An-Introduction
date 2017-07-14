@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>415195214836-j0u956jjpe6iocpen17jnb400tv5trk3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.415195214836-j0u956jjpe6iocpen17jnb400tv5trk3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGffmEW449hS-QQU4_a7dtN2MrtMIMAhw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>415195214836</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>www.google.com.Brews--An-Introduction</string>
+	<key>PROJECT_ID</key>
+	<string>brews-an-introduction</string>
+	<key>STORAGE_BUCKET</key>
+	<string>brews-an-introduction.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:415195214836:ios:f75c2e446d66149e</string>
+	<key>DATABASE_URL</key>
+	<string>https://brews-an-introduction.firebaseio.com</string>
+</dict>
+</plist>

@@ -10,7 +10,11 @@ target 'Brews: An Introduction' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
-  pod 'Firebase/Core'
+  pod ‘Google/SignIn’
+  pod ‘Firebase/Auth’
+  pod ‘Firebase/Storage’
+  pod ‘Firebase/Core’
+  pod ‘Firebase/Database’
 
   target 'Brews: An IntroductionTests' do
     inherit! :search_paths
