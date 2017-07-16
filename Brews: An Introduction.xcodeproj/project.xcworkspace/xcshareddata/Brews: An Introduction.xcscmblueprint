@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C352DB39D10004729768B25E4798A3B764511247",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EE8ED4071E24F34BA762F052316D92C21024C95E" : 9223372036854775807,
+    "C352DB39D10004729768B25E4798A3B764511247" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "451602EC-77C5-4CE6-9B1F-C2100B02BD59",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EE8ED4071E24F34BA762F052316D92C21024C95E" : "Brews\/",
+    "C352DB39D10004729768B25E4798A3B764511247" : "Brews:%20An%20Introduction\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Brews: An Introduction",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Brews: An Introduction.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/miked9229\/Brews-An-Introduction.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C352DB39D10004729768B25E4798A3B764511247"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/miked9229\/Brews.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE8ED4071E24F34BA762F052316D92C21024C95E"
+    }
+  ]
+}

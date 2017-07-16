@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C40A311B815BC8A2C346143 /* Pods_Brews__An_IntroductionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF17D48C97AD76AF5578283 /* Pods_Brews__An_IntroductionTests.framework */; };
 		92D2A9BD1F185B7A00AC55D5 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */; };
-		92D2A9C21F197B7B00AC55D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */; };
 		92D2A9C61F1AE86900AC55D5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */; };
 		92D2A9C81F1AE93A00AC55D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */; };
 		92D2A9CA1F1AE95100AC55D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C91F1AE95100AC55D5 /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */; };
 		92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */; };
 		92D2A9D81F1AE99E00AC55D5 /* BreweryDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */; };
+		92D2AA161F1BD05E00AC55D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D2AA151F1BD05E00AC55D5 /* GoogleService-Info.plist */; };
 		92FDF8AD1EF9D7B700DE2574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */; };
 		92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */; };
 		92FDF8C21EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8C11EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift */; };
@@ -52,7 +52,6 @@
 		64DCEBAC252B9737043B5040 /* Pods-Brews: An IntroductionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brews: An IntroductionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brews: An IntroductionUITests/Pods-Brews: An IntroductionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDBlackBox.swift; path = ../Brews/Brews/GCDBlackBox.swift; sourceTree = "<group>"; };
 		92D2A9BE1F19794E00AC55D5 /* Brews: An Introduction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Brews: An Introduction.entitlements"; sourceTree = "<group>"; };
-		92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D2A9C91F1AE95100AC55D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomBeerViewController.swift; sourceTree = "<group>"; };
 		92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedBeerViewController.swift; sourceTree = "<group>"; };
 		92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDBClient.swift; sourceTree = "<group>"; };
+		92D2AA151F1BD05E00AC55D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92FDF8A91EF9D7B700DE2574 /* Brews: An Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brews: An Introduction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Brews: An Introduction/AppDelegate.swift"; sourceTree = "<group>"; };
 		92FDF8B61EF9D7B700DE2574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,9 +148,9 @@
 				92D2A9BE1F19794E00AC55D5 /* Brews: An Introduction.entitlements */,
 				92D2A9C91F1AE95100AC55D5 /* Main.storyboard */,
 				92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */,
-				92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */,
 				92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */,
 				92FDF8B81EF9D7B700DE2574 /* Info.plist */,
+				92D2AA151F1BD05E00AC55D5 /* GoogleService-Info.plist */,
 			);
 			name = HelperFiles;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 				TargetAttributes = {
 					92FDF8A81EF9D7B700DE2574 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = C7H5VU6UVJ;
+						DevelopmentTeam = 2E3GYECC25;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -332,7 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */,
-				92D2A9C21F197B7B00AC55D5 /* GoogleService-Info.plist in Resources */,
+				92D2AA161F1BD05E00AC55D5 /* GoogleService-Info.plist in Resources */,
 				92D2A9C81F1AE93A00AC55D5 /* Assets.xcassets in Resources */,
 				92D2A9CA1F1AE95100AC55D5 /* Main.storyboard in Resources */,
 			);
@@ -651,11 +651,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Brews: An Introduction/Brews: An Introduction.entitlements";
-				DEVELOPMENT_TEAM = C7H5VU6UVJ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2E3GYECC25;
 				INFOPLIST_FILE = "Brews: An Introduction/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "www.google.com.Brews--An-Introduction";
+				PRODUCT_BUNDLE_IDENTIFIER = www.google.com.BrewsIntroducingBeerToEveryone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -666,11 +668,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Brews: An Introduction/Brews: An Introduction.entitlements";
-				DEVELOPMENT_TEAM = C7H5VU6UVJ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2E3GYECC25;
 				INFOPLIST_FILE = "Brews: An Introduction/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "www.google.com.Brews--An-Introduction";
+				PRODUCT_BUNDLE_IDENTIFIER = www.google.com.BrewsIntroducingBeerToEveryone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
