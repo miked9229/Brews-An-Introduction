@@ -10,10 +10,16 @@
 		2C40A311B815BC8A2C346143 /* Pods_Brews__An_IntroductionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF17D48C97AD76AF5578283 /* Pods_Brews__An_IntroductionTests.framework */; };
 		92D2A9BD1F185B7A00AC55D5 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */; };
 		92D2A9C21F197B7B00AC55D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */; };
+		92D2A9C61F1AE86900AC55D5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */; };
+		92D2A9C81F1AE93A00AC55D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */; };
+		92D2A9CA1F1AE95100AC55D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C91F1AE95100AC55D5 /* Main.storyboard */; };
+		92D2A9D01F1AE96200AC55D5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CB1F1AE96200AC55D5 /* TabBarViewController.swift */; };
+		92D2A9D11F1AE96200AC55D5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CC1F1AE96200AC55D5 /* SearchViewController.swift */; };
+		92D2A9D21F1AE96200AC55D5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CD1F1AE96200AC55D5 /* FavoritesViewController.swift */; };
+		92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */; };
+		92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */; };
+		92D2A9D81F1AE99E00AC55D5 /* BreweryDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */; };
 		92FDF8AD1EF9D7B700DE2574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */; };
-		92FDF8AF1EF9D7B700DE2574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8AE1EF9D7B700DE2574 /* ViewController.swift */; };
-		92FDF8B21EF9D7B700DE2574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDF8B01EF9D7B700DE2574 /* Main.storyboard */; };
-		92FDF8B41EF9D7B700DE2574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FDF8B31EF9D7B700DE2574 /* Assets.xcassets */; };
 		92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */; };
 		92FDF8C21EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8C11EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift */; };
 		92FDF8CD1EF9D7B700DE2574 /* Brews__An_IntroductionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8CC1EF9D7B700DE2574 /* Brews__An_IntroductionUITests.swift */; };
@@ -44,14 +50,20 @@
 		3DF17D48C97AD76AF5578283 /* Pods_Brews__An_IntroductionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brews__An_IntroductionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FB671464BEBCA8D653D52B /* Pods_Brews__An_Introduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brews__An_Introduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DCEBAC252B9737043B5040 /* Pods-Brews: An IntroductionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brews: An IntroductionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brews: An IntroductionUITests/Pods-Brews: An IntroductionUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDBlackBox.swift; path = ../../Brews/Brews/GCDBlackBox.swift; sourceTree = "<group>"; };
+		92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDBlackBox.swift; path = ../Brews/Brews/GCDBlackBox.swift; sourceTree = "<group>"; };
 		92D2A9BE1F19794E00AC55D5 /* Brews: An Introduction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Brews: An Introduction.entitlements"; sourceTree = "<group>"; };
 		92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92D2A9C91F1AE95100AC55D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		92D2A9CB1F1AE96200AC55D5 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		92D2A9CC1F1AE96200AC55D5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		92D2A9CD1F1AE96200AC55D5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomBeerViewController.swift; sourceTree = "<group>"; };
+		92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedBeerViewController.swift; sourceTree = "<group>"; };
+		92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDBClient.swift; sourceTree = "<group>"; };
 		92FDF8A91EF9D7B700DE2574 /* Brews: An Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brews: An Introduction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92FDF8AE1EF9D7B700DE2574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92FDF8B11EF9D7B700DE2574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92FDF8B31EF9D7B700DE2574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Brews: An Introduction/AppDelegate.swift"; sourceTree = "<group>"; };
 		92FDF8B61EF9D7B700DE2574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FDF8B81EF9D7B700DE2574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FDF8BD1EF9D7B700DE2574 /* Brews: An IntroductionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brews: An IntroductionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,9 +129,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		92D2A9C31F1AE7E000AC55D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */,
+				92D2A9CB1F1AE96200AC55D5 /* TabBarViewController.swift */,
+				92D2A9CC1F1AE96200AC55D5 /* SearchViewController.swift */,
+				92D2A9CD1F1AE96200AC55D5 /* FavoritesViewController.swift */,
+				92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */,
+				92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92D2A9C41F1AE7EB00AC55D5 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				92D2A9BE1F19794E00AC55D5 /* Brews: An Introduction.entitlements */,
+				92D2A9C91F1AE95100AC55D5 /* Main.storyboard */,
+				92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */,
+				92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */,
+				92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */,
+				92FDF8B81EF9D7B700DE2574 /* Info.plist */,
+			);
+			name = HelperFiles;
+			sourceTree = "<group>";
+		};
 		92FDF8A01EF9D7B700DE2574 = {
 			isa = PBXGroup;
 			children = (
+				92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */,
+				92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */,
 				92FDF8AB1EF9D7B700DE2574 /* Brews: An Introduction */,
 				92FDF8C01EF9D7B700DE2574 /* Brews: An IntroductionTests */,
 				92FDF8CB1EF9D7B700DE2574 /* Brews: An IntroductionUITests */,
@@ -142,15 +182,9 @@
 		92FDF8AB1EF9D7B700DE2574 /* Brews: An Introduction */ = {
 			isa = PBXGroup;
 			children = (
-				92D2A9BE1F19794E00AC55D5 /* Brews: An Introduction.entitlements */,
-				92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */,
-				92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */,
-				92FDF8AE1EF9D7B700DE2574 /* ViewController.swift */,
-				92FDF8B01EF9D7B700DE2574 /* Main.storyboard */,
-				92FDF8B31EF9D7B700DE2574 /* Assets.xcassets */,
-				92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */,
-				92FDF8B81EF9D7B700DE2574 /* Info.plist */,
-				92D2A9C11F197B7B00AC55D5 /* GoogleService-Info.plist */,
+				92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */,
+				92D2A9C41F1AE7EB00AC55D5 /* HelperFiles */,
+				92D2A9C31F1AE7E000AC55D5 /* ViewControllers */,
 			);
 			path = "Brews: An Introduction";
 			sourceTree = "<group>";
@@ -299,8 +333,8 @@
 			files = (
 				92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */,
 				92D2A9C21F197B7B00AC55D5 /* GoogleService-Info.plist in Resources */,
-				92FDF8B41EF9D7B700DE2574 /* Assets.xcassets in Resources */,
-				92FDF8B21EF9D7B700DE2574 /* Main.storyboard in Resources */,
+				92D2A9C81F1AE93A00AC55D5 /* Assets.xcassets in Resources */,
+				92D2A9CA1F1AE95100AC55D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,8 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FDF8AF1EF9D7B700DE2574 /* ViewController.swift in Sources */,
+				92D2A9D11F1AE96200AC55D5 /* SearchViewController.swift in Sources */,
+				92D2A9D81F1AE99E00AC55D5 /* BreweryDBClient.swift in Sources */,
+				92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */,
+				92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */,
+				92D2A9D01F1AE96200AC55D5 /* TabBarViewController.swift in Sources */,
+				92D2A9C61F1AE86900AC55D5 /* LogInViewController.swift in Sources */,
 				92D2A9BD1F185B7A00AC55D5 /* GCDBlackBox.swift in Sources */,
+				92D2A9D21F1AE96200AC55D5 /* FavoritesViewController.swift in Sources */,
 				92FDF8AD1EF9D7B700DE2574 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,14 +541,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		92FDF8B01EF9D7B700DE2574 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92FDF8B11EF9D7B700DE2574 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
