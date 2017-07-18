@@ -18,7 +18,8 @@
 		92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */; };
 		92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */; };
 		92D2A9D81F1AE99E00AC55D5 /* BreweryDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */; };
-		92D2AA161F1BD05E00AC55D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D2AA151F1BD05E00AC55D5 /* GoogleService-Info.plist */; };
+		92D2AA181F1C11D900AC55D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D2AA171F1C11D900AC55D5 /* GoogleService-Info.plist */; };
+		92D2AA1A1F1D9B2300AC55D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2AA191F1D9B2300AC55D5 /* Constants.swift */; };
 		92FDF8AD1EF9D7B700DE2574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */; };
 		92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */; };
 		92FDF8C21EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8C11EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift */; };
@@ -61,7 +62,8 @@
 		92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomBeerViewController.swift; sourceTree = "<group>"; };
 		92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedBeerViewController.swift; sourceTree = "<group>"; };
 		92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDBClient.swift; sourceTree = "<group>"; };
-		92D2AA151F1BD05E00AC55D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92D2AA171F1C11D900AC55D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92D2AA191F1D9B2300AC55D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		92FDF8A91EF9D7B700DE2574 /* Brews: An Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brews: An Introduction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Brews: An Introduction/AppDelegate.swift"; sourceTree = "<group>"; };
 		92FDF8B61EF9D7B700DE2574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,7 +152,7 @@
 				92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */,
 				92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */,
 				92FDF8B81EF9D7B700DE2574 /* Info.plist */,
-				92D2AA151F1BD05E00AC55D5 /* GoogleService-Info.plist */,
+				92D2AA171F1C11D900AC55D5 /* GoogleService-Info.plist */,
 			);
 			name = HelperFiles;
 			sourceTree = "<group>";
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */,
+				92D2AA191F1D9B2300AC55D5 /* Constants.swift */,
 				92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */,
 				92FDF8AB1EF9D7B700DE2574 /* Brews: An Introduction */,
 				92FDF8C01EF9D7B700DE2574 /* Brews: An IntroductionTests */,
@@ -332,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */,
-				92D2AA161F1BD05E00AC55D5 /* GoogleService-Info.plist in Resources */,
+				92D2AA181F1C11D900AC55D5 /* GoogleService-Info.plist in Resources */,
 				92D2A9C81F1AE93A00AC55D5 /* Assets.xcassets in Resources */,
 				92D2A9CA1F1AE95100AC55D5 /* Main.storyboard in Resources */,
 			);
@@ -502,6 +505,7 @@
 				92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */,
 				92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */,
 				92D2A9D01F1AE96200AC55D5 /* TabBarViewController.swift in Sources */,
+				92D2AA1A1F1D9B2300AC55D5 /* Constants.swift in Sources */,
 				92D2A9C61F1AE86900AC55D5 /* LogInViewController.swift in Sources */,
 				92D2A9BD1F185B7A00AC55D5 /* GCDBlackBox.swift in Sources */,
 				92D2A9D21F1AE96200AC55D5 /* FavoritesViewController.swift in Sources */,

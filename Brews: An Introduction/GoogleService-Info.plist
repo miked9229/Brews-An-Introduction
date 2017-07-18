@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>95804571982-e5rq68nenbjv472uuh91u2su8gndcicv.apps.googleusercontent.com</string>
+	<string>159636457607-9k15rffo75e449egq2tkgcs3js27plrq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.95804571982-e5rq68nenbjv472uuh91u2su8gndcicv</string>
+	<string>com.googleusercontent.apps.159636457607-9k15rffo75e449egq2tkgcs3js27plrq</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDPoUIxbwYEbCKn9jZh1_hc6qb2SGqqa7M</string>
+	<string>AIzaSyAwEUkrXJ5klky5wB3QJAicZKk7yec1Ilw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>95804571982</string>
+	<string>159636457607</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>www.google.com.BrewsIntroducingBeer</string>
+	<string>www.google.com.BrewsIntroducingBeerToEveryone</string>
 	<key>PROJECT_ID</key>
-	<string>brews-introducing-beer</string>
+	<string>brews-introducing-beer-4b550</string>
 	<key>STORAGE_BUCKET</key>
-	<string>brews-introducing-beer.appspot.com</string>
+	<string>brews-introducing-beer-4b550.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:95804571982:ios:f64bb5e2c8b7b4a6</string>
+	<string>1:159636457607:ios:c0e4986f49d2dbba</string>
 	<key>DATABASE_URL</key>
-	<string>https://brews-introducing-beer.firebaseio.com</string>
+	<string>https://brews-introducing-beer-4b550.firebaseio.com</string>
 </dict>
 </plist>
