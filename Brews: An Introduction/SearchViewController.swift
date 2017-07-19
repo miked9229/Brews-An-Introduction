@@ -35,7 +35,7 @@ class SearchViewController: UIViewController {
         super.viewWillAppear(animated)
         searchBar.delegate = self
         searchBar.returnKeyType = .done
-         self.navigationController?.navigationBar.topItem?.title = "Hi \((FIRAuth.auth()!.currentUser?.displayName)!)!"
+         self.navigationController?.navigationBar.topItem?.title = "Hi, please click a beer"
         refreshControl.addTarget(self, action: #selector(pulldown), for: .valueChanged)
         beerTable.addSubview(refreshControl)
     
