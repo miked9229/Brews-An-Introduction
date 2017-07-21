@@ -17,12 +17,17 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
     var currentUser: String!
+   
+    @IBOutlet var loginButton: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpFaceBookButtons()
         setUpGoogleButtons()
         setUpBackGroundImage()
+        setUpGuestLogInButton()
         listenForUserAuthentication()
   
     }
@@ -80,6 +85,22 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubview(toBack: imageView)
+        
+    }
+    fileprivate func setUpGuestLogInButton() {
+         let margins = view.layoutMarginsGuide
+        let loginButton = UIButton(type: .system)
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 5.0)
+        loginButton.setTitle("Login As Guest", for: .normal)
+        loginButton.titleLabel?.textColor = .black
+        view.addSubview(loginButton)
+      
+      
+        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.88).isActive = true
+        loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+
         
     }
     

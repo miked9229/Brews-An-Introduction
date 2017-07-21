@@ -13,7 +13,7 @@
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,12 +30,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1201" y="125"/>
+            <point key="canvasLocation" x="-1202.4000000000001" y="124.58770614692655"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="snn-WV-8Yv">
             <objects>
-                <viewController storyboardIdentifier="FavoritesViewController" id="aMP-GQ-yeW" customClass="FavoritesViewController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoritesViewController" id="aMP-GQ-yeW" customClass="FavoritesViewController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sx7-zM-NCF"/>
                         <viewControllerLayoutGuide type="bottom" id="IpF-oM-Kon"/>
@@ -83,7 +83,7 @@
         <!--Selected Beer View Controller-->
         <scene sceneID="3jc-Av-aoj">
             <objects>
-                <viewController storyboardIdentifier="SelectedBeerViewController" id="JfM-Gj-BHA" customClass="SelectedBeerViewController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectedBeerViewController" id="JfM-Gj-BHA" customClass="SelectedBeerViewController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c8h-iH-jyD"/>
                         <viewControllerLayoutGuide type="bottom" id="bkP-Hb-akM"/>
@@ -165,7 +165,7 @@
         <!--Random-->
         <scene sceneID="KfR-Se-p1y">
             <objects>
-                <viewController storyboardIdentifier="RandomBeerViewController" id="av9-na-oZT" customClass="RandomBeerViewController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RandomBeerViewController" id="av9-na-oZT" customClass="RandomBeerViewController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Ln-lm-tyy"/>
                         <viewControllerLayoutGuide type="bottom" id="2c3-Vs-n3M"/>
@@ -204,7 +204,7 @@
         <!--Search View Controller-->
         <scene sceneID="HkB-i2-Fg9">
             <objects>
-                <viewController id="ZAb-NX-ZEm" customClass="SearchViewController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZAb-NX-ZEm" customClass="SearchViewController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xqh-gR-Vxs"/>
                         <viewControllerLayoutGuide type="bottom" id="Unx-h4-yRj"/>
@@ -260,7 +260,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1o5-le-rNf">
             <objects>
-                <navigationController storyboardIdentifier="NavigationController" id="Xa2-pt-YWr" customClass="NavigationController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" id="Xa2-pt-YWr" customClass="NavigationController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="4eq-tG-4fe">
@@ -278,7 +278,7 @@
         <!--TabBarViewController-->
         <scene sceneID="4Kh-cC-h6c">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewController" title="TabBarViewController" id="bi8-oj-6OZ" customClass="TabBarViewController" customModule="Brews" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" title="TabBarViewController" id="bi8-oj-6OZ" customClass="TabBarViewController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ndh-gX-MO1">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="K45-z1-EjW">
                             <connections>

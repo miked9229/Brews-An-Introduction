@@ -659,7 +659,7 @@
 				DEVELOPMENT_TEAM = 2E3GYECC25;
 				INFOPLIST_FILE = "Brews: An Introduction/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.google.com.BrewsIntroducingBeerToEveryone;
+				PRODUCT_BUNDLE_IDENTIFIER = www.google.com.BrewsIntroducingBeerToEveryoneWoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -676,7 +676,7 @@
 				DEVELOPMENT_TEAM = 2E3GYECC25;
 				INFOPLIST_FILE = "Brews: An Introduction/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.google.com.BrewsIntroducingBeerToEveryone;
+				PRODUCT_BUNDLE_IDENTIFIER = www.google.com.BrewsIntroducingBeerToEveryoneWoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
