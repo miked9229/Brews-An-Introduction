@@ -39,18 +39,22 @@ class FavoritesViewController: UIViewController {
     public func listenForUserAuthentication() {
         
         let uid = FIRAuth.auth()!.currentUser?.uid
-        FIRDatabase.database().reference().child("users/users/individualusers").child(uid!).observe(.value) { (snapshot: FIRDataSnapshot) in
-            
-            self.favoritesArray = []
-            for each in snapshot.children {
-               
-                self.favoritesArray.append(each as! FIRDataSnapshot)
+        if let uid = uid {
+            FIRDatabase.database().reference().child("users/users/individualusers").child(uid).observe(.value) { (snapshot: FIRDataSnapshot) in
+                
+                self.favoritesArray = []
+                for each in snapshot.children {
+                    
+                    self.favoritesArray.append(each as! FIRDataSnapshot)
+                    
+                }
+                
+                self.tableView.reloadData()
                 
             }
             
-            self.tableView.reloadData()
-  
         }
+
  
     }
     

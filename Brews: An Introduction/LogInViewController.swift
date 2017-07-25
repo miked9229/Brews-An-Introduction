@@ -65,7 +65,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         let loginButton = FBSDKLoginButton()
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginButton)
-        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.75).isActive = true
+        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.758).isActive = true
         loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         loginButton.heightAnchor.constraint(equalTo: loginButton.widthAnchor, multiplier: 2.0).isActive = true
@@ -94,15 +94,15 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         loginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 5.0)
         loginButton.setTitle("Login As Guest", for: .normal)
         loginButton.titleLabel?.textColor = .black
+        loginButton.addTarget(self, action: #selector(signIntoFirebaseAnnonymously), for: .touchUpInside)
         view.addSubview(loginButton)
-      
-      
         loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.88).isActive = true
         loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
 
         
     }
+    
     
 // MARK: View Transition Methods
     func presentNextController() {
@@ -114,6 +114,14 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
     }
 
 // MARK: Firebase Methods
+    
+    func signIntoFirebaseAnnonymously() {
+        FIRAuth.auth()?.signInAnonymously() { (user, error) in
+              self.performSegue(withIdentifier: "loginToList", sender: nil)
+        }
+    }
+    
+    
     
     func showEmailAddress() {
         let accessToken = FBSDKAccessToken.current()
