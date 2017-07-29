@@ -84,35 +84,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
     
 // MARK: Configure UI Elements
     
-    fileprivate func setUpGoogleButtons() {
-        
-        let margins = view.layoutMarginsGuide
-        let googleButton = GIDSignInButton()
-        googleButton.style = .wide
-        googleButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(googleButton)
-//        googleButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.80).isActive = true
-//        googleButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-//        googleButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-//        googleButton.heightAnchor.constraint(equalTo: googleButton.widthAnchor, multiplier: 2.0).isActive = true
-        GIDSignIn.sharedInstance().uiDelegate = self
 
-        
-    }
 
-    fileprivate func setUpFaceBookButtons() {
-
-        let margins = view.layoutMarginsGuide
-        let loginButton = FBSDKLoginButton()
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(loginButton)
-//        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.758).isActive = true
-//        loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-//        loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-//        loginButton.heightAnchor.constraint(equalTo: loginButton.widthAnchor, multiplier: 2.0).isActive = true
-
-        
-    }
     
     fileprivate func setUpBackGroundImage() {
         let background = UIImage(named: "BackgroundImage")
@@ -126,21 +99,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         self.view.sendSubview(toBack: imageView)
         
     }
-    fileprivate func setUpGuestLogInButton() {
-          let margins = view.layoutMarginsGuide
-        let loginButton = UIButton(type: .system)
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 5.0)
-        loginButton.setTitle("Login As Guest", for: .normal)
-        loginButton.titleLabel?.textColor = .black
-        loginButton.addTarget(self, action: #selector(signIntoFirebaseAnnonymously), for: .touchUpInside)
-        view.addSubview(loginButton)
-        loginButton.topAnchor.constraint(equalTo: googleButton.bottomAnchor, constant: 10).isActive = true
-        loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-        loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
 
-        
-    }
     
     
 
