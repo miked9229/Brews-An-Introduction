@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C40A311B815BC8A2C346143 /* Pods_Brews__An_IntroductionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF17D48C97AD76AF5578283 /* Pods_Brews__An_IntroductionTests.framework */; };
+		9278438A1F2CC59B007E6D02 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927843891F2CC59B007E6D02 /* Views.swift */; };
 		92D2A9BD1F185B7A00AC55D5 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */; };
 		92D2A9C61F1AE86900AC55D5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */; };
 		92D2A9C81F1AE93A00AC55D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D2A9C71F1AE93A00AC55D5 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		3DF17D48C97AD76AF5578283 /* Pods_Brews__An_IntroductionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brews__An_IntroductionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FB671464BEBCA8D653D52B /* Pods_Brews__An_Introduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brews__An_Introduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DCEBAC252B9737043B5040 /* Pods-Brews: An IntroductionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brews: An IntroductionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brews: An IntroductionUITests/Pods-Brews: An IntroductionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		927843891F2CC59B007E6D02 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		92D2A9BC1F185B7A00AC55D5 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDBlackBox.swift; path = ../Brews/Brews/GCDBlackBox.swift; sourceTree = "<group>"; };
 		92D2A9BE1F19794E00AC55D5 /* Brews: An Introduction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Brews: An Introduction.entitlements"; sourceTree = "<group>"; };
 		92D2A9C51F1AE86900AC55D5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		927843881F2CC0A2007E6D02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				927843891F2CC59B007E6D02 /* Views.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		92D2A9C31F1AE7E000AC55D5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */,
+				927843881F2CC0A2007E6D02 /* Views */,
 				92D2A9C41F1AE7EB00AC55D5 /* HelperFiles */,
 				92D2A9C31F1AE7E000AC55D5 /* ViewControllers */,
 			);
@@ -501,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92D2A9D11F1AE96200AC55D5 /* SearchViewController.swift in Sources */,
+				9278438A1F2CC59B007E6D02 /* Views.swift in Sources */,
 				92D2A9D81F1AE99E00AC55D5 /* BreweryDBClient.swift in Sources */,
 				92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */,
 				92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */,

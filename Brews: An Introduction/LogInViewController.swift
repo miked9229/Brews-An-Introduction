@@ -19,15 +19,56 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
     var currentUser: String!
    
     @IBOutlet var loginButton: UIButton!
-    
+    @IBOutlet var googleButton: GIDSignInButton!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpFaceBookButtons()
-        setUpGoogleButtons()
+        GIDSignIn.sharedInstance().uiDelegate = self
+        let margins = view.layoutMarginsGuide
+        
         setUpBackGroundImage()
-        setUpGuestLogInButton()
+        
+        let googleButton = GIDSignInButton()
+        googleButton.style = .wide
+        googleButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(googleButton)
+       
+        
+        let loginButton = FBSDKLoginButton()
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.delegate = self
+        loginButton.readPermissions = ["email", "public_profile"]
+        view.addSubview(loginButton)
+
+        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.758).isActive = true
+        loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        
+        
+        googleButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 5).isActive = true
+        googleButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        googleButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        
+        
+
+        
+        
+        let guestLoginButton = UIButton(type: .system)
+        guestLoginButton.translatesAutoresizingMaskIntoConstraints = false
+        guestLoginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 5.0)
+        guestLoginButton.setTitle("Login As Guest", for: .normal)
+        guestLoginButton.titleLabel?.textColor = .black
+        guestLoginButton.addTarget(self, action: #selector(signIntoFirebaseAnnonymously), for: .touchUpInside)
+        view.addSubview(guestLoginButton)
+
+        
+        guestLoginButton.topAnchor.constraint(equalTo: googleButton.bottomAnchor, constant: 5).isActive = true
+        guestLoginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        guestLoginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        
+  
+        
         listenForUserAuthentication()
   
     }
@@ -50,10 +91,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         googleButton.style = .wide
         googleButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(googleButton)
-        googleButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.80).isActive = true
-        googleButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-        googleButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-        googleButton.heightAnchor.constraint(equalTo: googleButton.widthAnchor, multiplier: 2.0).isActive = true
+//        googleButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.80).isActive = true
+//        googleButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+//        googleButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+//        googleButton.heightAnchor.constraint(equalTo: googleButton.widthAnchor, multiplier: 2.0).isActive = true
         GIDSignIn.sharedInstance().uiDelegate = self
 
         
@@ -65,13 +106,11 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         let loginButton = FBSDKLoginButton()
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginButton)
-        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.758).isActive = true
-        loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-        loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-        loginButton.heightAnchor.constraint(equalTo: loginButton.widthAnchor, multiplier: 2.0).isActive = true
-        loginButton.delegate = self
-        
-        loginButton.readPermissions = ["email", "public_profile"]
+//        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.758).isActive = true
+//        loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+//        loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+//        loginButton.heightAnchor.constraint(equalTo: loginButton.widthAnchor, multiplier: 2.0).isActive = true
+
         
     }
     
@@ -88,7 +127,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         
     }
     fileprivate func setUpGuestLogInButton() {
-         let margins = view.layoutMarginsGuide
+          let margins = view.layoutMarginsGuide
         let loginButton = UIButton(type: .system)
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 5.0)
@@ -96,7 +135,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         loginButton.titleLabel?.textColor = .black
         loginButton.addTarget(self, action: #selector(signIntoFirebaseAnnonymously), for: .touchUpInside)
         view.addSubview(loginButton)
-        loginButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: view.frame.height * 0.88).isActive = true
+        loginButton.topAnchor.constraint(equalTo: googleButton.bottomAnchor, constant: 10).isActive = true
         loginButton.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         loginButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
 
@@ -104,14 +143,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
     }
     
     
-// MARK: View Transition Methods
-    func presentNextController() {
-        
-//        let controller = storyboard?.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
-//        
-//        navigationController?.pushViewController(controller, animated: true)
-        
-    }
+
 
 // MARK: Firebase Methods
     
