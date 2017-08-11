@@ -101,9 +101,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZxQ-iR-YdW">
-                                <rect key="frame" x="16" y="152" width="324" height="438"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcohol Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxv-7h-A0A">
                                 <rect key="frame" x="43" y="643" width="78" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -129,32 +126,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yG9-89-7So">
+                                <rect key="frame" x="23" y="137" width="328" height="439"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="1nU-Op-H66" secondAttribute="leading" id="2XK-64-AD9"/>
-                            <constraint firstItem="bkP-Hb-akM" firstAttribute="top" secondItem="ZxQ-iR-YdW" secondAttribute="bottom" constant="77" id="8oM-pH-bx9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZxQ-iR-YdW" secondAttribute="trailing" constant="19" id="C7P-Ye-ddO"/>
                             <constraint firstItem="1ML-ex-IDH" firstAttribute="top" secondItem="c8h-iH-jyD" secondAttribute="bottom" constant="24" id="DZt-ZZ-tck"/>
                             <constraint firstItem="1ML-ex-IDH" firstAttribute="trailing" secondItem="zqx-vV-Ioi" secondAttribute="trailingMargin" id="Dh6-Bd-73r"/>
                             <constraint firstItem="bkP-Hb-akM" firstAttribute="top" secondItem="wdr-jd-VeD" secondAttribute="bottom" constant="5" id="GMS-ft-5VC"/>
                             <constraint firstItem="bkP-Hb-akM" firstAttribute="top" secondItem="yxv-7h-A0A" secondAttribute="bottom" constant="4" id="KJ0-Sc-7gc"/>
+                            <constraint firstItem="yG9-89-7So" firstAttribute="leading" secondItem="zqx-vV-Ioi" secondAttribute="leadingMargin" constant="7" id="LEU-MV-BIU"/>
                             <constraint firstItem="1ML-ex-IDH" firstAttribute="leading" secondItem="zqx-vV-Ioi" secondAttribute="leadingMargin" id="MXc-Rr-qEY"/>
                             <constraint firstItem="bkP-Hb-akM" firstAttribute="top" secondItem="1nU-Op-H66" secondAttribute="bottom" constant="32" id="MeQ-Sg-CjO"/>
-                            <constraint firstItem="ZxQ-iR-YdW" firstAttribute="leading" secondItem="zqx-vV-Ioi" secondAttribute="leadingMargin" id="T22-st-fT7"/>
-                            <constraint firstItem="ZxQ-iR-YdW" firstAttribute="top" secondItem="1ML-ex-IDH" secondAttribute="bottom" constant="8" id="Yf1-wd-UaS"/>
+                            <constraint firstItem="yG9-89-7So" firstAttribute="top" secondItem="1ML-ex-IDH" secondAttribute="bottom" constant="-7" id="Pn8-dh-oz8"/>
                             <constraint firstItem="yxv-7h-A0A" firstAttribute="leading" secondItem="zqx-vV-Ioi" secondAttribute="leadingMargin" constant="27" id="bpl-iJ-Y0a"/>
                             <constraint firstItem="wdr-jd-VeD" firstAttribute="leading" secondItem="yxv-7h-A0A" secondAttribute="trailing" constant="31" id="dVy-YD-QMN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wdr-jd-VeD" secondAttribute="trailing" constant="25" id="eNm-EH-qgz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yG9-89-7So" secondAttribute="trailing" constant="8" id="gRV-rv-88M"/>
+                            <constraint firstItem="1nU-Op-H66" firstAttribute="top" secondItem="yG9-89-7So" secondAttribute="bottom" constant="29" id="hO3-w7-7hi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1nU-Op-H66" secondAttribute="trailing" constant="19" id="jbR-vm-uUs"/>
                             <constraint firstItem="yxv-7h-A0A" firstAttribute="top" secondItem="1nU-Op-H66" secondAttribute="bottom" constant="8" id="kxj-f6-Q1b"/>
                             <constraint firstItem="wdr-jd-VeD" firstAttribute="top" secondItem="1nU-Op-H66" secondAttribute="bottom" constant="10" id="m4g-uw-gpF"/>
-                            <constraint firstItem="ZxQ-iR-YdW" firstAttribute="top" secondItem="1ML-ex-IDH" secondAttribute="bottom" constant="8" id="qTw-iu-3KA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="UserFavoritesBar" destination="1nU-Op-H66" id="aS9-DR-FBc"/>
-                        <outlet property="beerImage" destination="ZxQ-iR-YdW" id="jRM-W0-IVi"/>
                         <outlet property="beerName" destination="1ML-ex-IDH" id="ZW6-bA-7EC"/>
                         <outlet property="selectedBeerAlcContent" destination="wdr-jd-VeD" id="dhl-FJ-twU"/>
                     </connections>
@@ -264,7 +262,7 @@
                 <navigationController storyboardIdentifier="NavigationController" id="Xa2-pt-YWr" customClass="NavigationController" customModule="Brews__An_Introduction" customModuleProvider="target" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="4eq-tG-4fe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="4eq-tG-4fe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
