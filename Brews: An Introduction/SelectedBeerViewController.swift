@@ -32,7 +32,6 @@ class SelectedBeerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setUpBeer()
-        downloadImage()
        listenForUserAuthentication()
        disableFavoritesButton()
       self.navigationController?.navigationBar.topItem?.title = ""
@@ -62,26 +61,28 @@ class SelectedBeerViewController: UIViewController {
 
     
     }
-    fileprivate func downloadImage() {
-        let storageRef = storage.reference()
-        let snapshotValue = selectedBeer.value as? [String: AnyObject]
-        let id = snapshotValue?["id"] as! String?
-        let beerRef = storageRef.child( id! + ".jpg")
-      
-        setUpActivityIndicator()
-        activityIndicator.startAnimating()
-        
-        beerRef.data(withMaxSize: 1 * 1024 * 1024) { (data, error) in
-            if error != nil {
-               return
-            }
-            self.activityIndicator.stopAnimating()
-            let image = UIImage(data: data!)
-            self.beerImage.image = image
-            
-        }
     
-    }
+//    fileprivate func downloadImage() {
+//      Deperecated Method
+//        let storageRef = storage.reference()
+//        let snapshotValue = selectedBeer.value as? [String: AnyObject]
+//        let id = snapshotValue?["id"] as! String?
+//        let beerRef = storageRef.child( id! + ".jpg")
+//      
+//        setUpActivityIndicator()
+//        activityIndicator.startAnimating()
+//        
+//        beerRef.data(withMaxSize: 1 * 1024 * 1024) { (data, error) in
+//            if error != nil {
+//               return
+//            }
+//            self.activityIndicator.stopAnimating()
+//            let image = UIImage(data: data!)
+//            self.beerImage.image = image
+//            
+//        }
+//    
+//    }
     
     public func listenForUserAuthentication() {
         
