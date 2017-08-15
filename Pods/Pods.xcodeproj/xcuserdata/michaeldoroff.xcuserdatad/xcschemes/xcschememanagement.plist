@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ExpandableLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,6 +82,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>30E01F11C650E0C3126E563C155D51EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>332F91393FB1DE033D370B4CEDDD5FCF</key>
 		<dict>
 			<key>primary</key>
@@ -107,11 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6FCDFEB96DD32FE95398268AC5CDDB28</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>7335E9C9689F3B8A16F063A884748533</key>
 		<dict>
 			<key>primary</key>
@@ -128,6 +133,11 @@
 			<true/>
 		</dict>
 		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B908F0F1AFDEEF43610C616EBF3C5D58</key>
 		<dict>
 			<key>primary</key>
 			<true/>

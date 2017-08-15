@@ -15,6 +15,7 @@ target 'Brews: An Introduction' do
   pod ‘Firebase/Storage’
   pod ‘Firebase/Core’
   pod ‘Firebase/Database’
+  pod “ExpandableLabel”
 
   target 'Brews: An IntroductionTests' do
     inherit! :search_paths

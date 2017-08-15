@@ -23,9 +23,7 @@ class SelectedBeerViewController: UIViewController {
     var matchBeerArray = [String]()
     var currentUser: String!
     @IBOutlet weak var beerName: UILabel!
-    @IBOutlet weak var beerImage: UIImageView!
     let storage = FIRStorage.storage()
-    @IBOutlet weak var selectedBeerAlcContent: UILabel!
     @IBOutlet weak var UserFavoritesBar: UIButton!
     let activityIndicator = UIActivityIndicatorView()
     
@@ -47,9 +45,9 @@ class SelectedBeerViewController: UIViewController {
         var style = snapshotValue?["style"] as? [String: AnyObject]
         
         if let alcoholContent = style?["abvMax"] as! String? {
-            selectedBeerAlcContent.text = alcoholContent + "%"
+//            selectedBeerAlcContent.text = alcoholContent + "%"
         } else {
-            selectedBeerAlcContent.text = "Not available"
+//            selectedBeerAlcContent.text = "Not available"
         }
         
 
