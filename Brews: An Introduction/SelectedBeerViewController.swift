@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 import FirebaseDatabase
+import ExpandableLabel
 
 
 // MARK: SelectedBeerViewController: UIViewController
@@ -22,10 +23,24 @@ class SelectedBeerViewController: UIViewController {
     var beerArray = [FIRDataSnapshot]()
     var matchBeerArray = [String]()
     var currentUser: String!
+    
+    @IBOutlet weak var organicIndicator: UILabel!
+    @IBOutlet weak var alcoholByVolumeIndicator: UILabel!
+    @IBOutlet weak var beerColorIntensityIndicator: UILabel!
     @IBOutlet weak var beerName: UILabel!
+    @IBOutlet var beerDescription: UITextView!
+ 
+    @IBOutlet var descriptionOfBeer: ExpandableLabel!
+    
     let storage = FIRStorage.storage()
     @IBOutlet weak var UserFavoritesBar: UIButton!
     let activityIndicator = UIActivityIndicatorView()
+    
+   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        beerDescription.isScrollEnabled = false
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,9 +48,18 @@ class SelectedBeerViewController: UIViewController {
        listenForUserAuthentication()
        disableFavoritesButton()
       self.navigationController?.navigationBar.topItem?.title = ""
-    
+      beerDescription.scrollRangeToVisible(NSRange(location:0, length:0))
+//      beerDescription.isScrollEnabled = true
+//      beerDescription.contentOffset.y = 0
+
        
+
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        beerDescription.setContentOffset(CGPoint.zero, animated: false)
     }
 
     
