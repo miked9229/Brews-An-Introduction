@@ -24,7 +24,7 @@ class RandomBeerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         beersSnapshot = []
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.topItem?.title = "Click to get a random beer!"
+        self.navigationController?.navigationBar.topItem?.title = "Tap to get a random beer!"
         ref = FIRDatabase.database().reference()
         ref.removeAllObservers()
         

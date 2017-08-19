@@ -30,7 +30,6 @@ class SelectedBeerViewController: UIViewController {
     @IBOutlet weak var beerName: UILabel!
     @IBOutlet var beerDescription: UITextView!
  
-    @IBOutlet var descriptionOfBeer: ExpandableLabel!
     
     let storage = FIRStorage.storage()
     @IBOutlet weak var UserFavoritesBar: UIButton!
@@ -39,7 +38,7 @@ class SelectedBeerViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        beerDescription.isScrollEnabled = false
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,8 +48,8 @@ class SelectedBeerViewController: UIViewController {
        disableFavoritesButton()
       self.navigationController?.navigationBar.topItem?.title = ""
       beerDescription.scrollRangeToVisible(NSRange(location:0, length:0))
-//      beerDescription.isScrollEnabled = true
-//      beerDescription.contentOffset.y = 0
+      beerDescription.isEditable = false
+
 
        
 
@@ -69,13 +68,44 @@ class SelectedBeerViewController: UIViewController {
         var style = snapshotValue?["style"] as? [String: AnyObject]
         
         if let alcoholContent = style?["abvMax"] as! String? {
-//            selectedBeerAlcContent.text = alcoholContent + "%"
+            alcoholByVolumeIndicator.text = alcoholContent + "%"
         } else {
-//            selectedBeerAlcContent.text = "Not available"
+            alcoholByVolumeIndicator.text = "Unavailable"
         }
         
 
+        if let description = snapshotValue?["description"] as! String? {
+            beerDescription.text = "Description: \n\n" + description
+            
+        } else {
+            beerDescription.text = "Description:  \n\n There is no description available for this beer"
+        }
         
+        if let organic = snapshotValue?["isOrganic"] as! String?
+        {
+            if organic == "N"
+            {
+                organicIndicator.text = "No"
+                
+            } else {
+                organicIndicator.text = "Yes"
+            }
+            
+         
+        } else {
+            organicIndicator.text = "Unavailable"
+            
+        }
+        
+      
+        if let colorintesity = style?["fgMax"] as! String? {
+            beerColorIntensityIndicator.text = colorintesity
+        } else {
+            beerColorIntensityIndicator.text = "Unavailable"
+        }
+        
+    
+    
     }
     
     fileprivate func disableFavoritesButton() {
