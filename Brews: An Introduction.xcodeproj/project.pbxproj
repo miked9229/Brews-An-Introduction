@@ -21,6 +21,7 @@
 		92D2A9D81F1AE99E00AC55D5 /* BreweryDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */; };
 		92D2AA181F1C11D900AC55D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D2AA171F1C11D900AC55D5 /* GoogleService-Info.plist */; };
 		92D2AA1A1F1D9B2300AC55D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2AA191F1D9B2300AC55D5 /* Constants.swift */; };
+		92D9CA301F6623CF00995092 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D9CA2F1F6623CF00995092 /* AboutViewController.swift */; };
 		92FDF8AD1EF9D7B700DE2574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */; };
 		92FDF8B71EF9D7B700DE2574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDF8B51EF9D7B700DE2574 /* LaunchScreen.storyboard */; };
 		92FDF8C21EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF8C11EF9D7B700DE2574 /* Brews__An_IntroductionTests.swift */; };
@@ -66,6 +67,7 @@
 		92D2A9D71F1AE99E00AC55D5 /* BreweryDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDBClient.swift; sourceTree = "<group>"; };
 		92D2AA171F1C11D900AC55D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92D2AA191F1D9B2300AC55D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92D9CA2F1F6623CF00995092 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		92FDF8A91EF9D7B700DE2574 /* Brews: An Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brews: An Introduction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FDF8AC1EF9D7B700DE2574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Brews: An Introduction/AppDelegate.swift"; sourceTree = "<group>"; };
 		92FDF8B61EF9D7B700DE2574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				92D2A9CD1F1AE96200AC55D5 /* FavoritesViewController.swift */,
 				92D2A9CE1F1AE96200AC55D5 /* RandomBeerViewController.swift */,
 				92D2A9CF1F1AE96200AC55D5 /* SelectedBeerViewController.swift */,
+				92D9CA2F1F6623CF00995092 /* AboutViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				92D2A9D31F1AE96200AC55D5 /* RandomBeerViewController.swift in Sources */,
 				92D2A9D41F1AE96200AC55D5 /* SelectedBeerViewController.swift in Sources */,
 				92D2A9D01F1AE96200AC55D5 /* TabBarViewController.swift in Sources */,
+				92D9CA301F6623CF00995092 /* AboutViewController.swift in Sources */,
 				92D2AA1A1F1D9B2300AC55D5 /* Constants.swift in Sources */,
 				92D2A9C61F1AE86900AC55D5 /* LogInViewController.swift in Sources */,
 				92D2A9BD1F185B7A00AC55D5 /* GCDBlackBox.swift in Sources */,

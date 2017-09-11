@@ -182,7 +182,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pol-hg-kbb">
                                                 <rect key="frame" x="0.0" y="0.0" width="328" height="109.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit sem magna, vel sollicitudin leo eleifend eu. Sed consequat ex at ex scelerisque, quis bibendum elit accumsan. Phasellus dolor lorem, condimentum id libero et, rhoncus luctus augue. Sed viverra felis vel sem mollis, in venenatis tellus laoreet. Vestibulum at est maximus, sodales nunc a, elementum sapien. Donec a ornare odio. Vestibulum a erat ornare, imperdiet risus ac, vestibulum libero. Aenean quis odio non metus tempus luctus non vitae leo. Nunc non urna vitae nunc placerat dictum. Vivamus nec metus eu nisi interdum euismod. Nunc viverra lectus at nisi dapibus facilisis sed ut ex. Vivamus ut sapien ut dolor maximus pulvinar ac et diam. Nam nisl felis, convallis id ultricies ut, vulputate sed tortor. Maecenas convallis convallis ante, eu commodo eros fermentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit sem magna, vel sollicitudin leo eleifend eu. Sed consequat ex at ex scelerisque, quis bibendum elit accumsan. Phasellus dolor lorem, condimentum id libero et, rhoncus luctus augue. Sed viverra felis vel sem mollis, in venenatis tellus laoreet. Vestibulum at est maximus, sodales nunc a, elementum sapien. Donec a ornare odio. Vestibulum a erat ornare, imperdiet risus ac, vestibulum libero. Aenean quis odio non metus tempus luctus non vitae leo. Nunc non urna vitae nunc placerat dictum. Vivamus nec metus eu nisi interdum euismod. Nunc viverra lectus at nisi dapibus facilisis sed ut ex. Vivamus ut sapien ut dolor maximus pulvinar ac et diam. Nam nisl felis, convallis id ultricies ut, vulputate sed tortor. Maecenas convallis convallis ante, eu commodo eros fermentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
 Curabitur sed augue in magna sagittis sollicitudin ac quis dolor. Duis mollis, neque et semper ornare, elit nibh viverra lectus, in luctus ex sapien vel nisl. Fusce vitae augue sed odio ultricies interdum vitae quis turpis. Fusce interdum nunc sed finibus venenatis. Mauris finibus molestie vulputate. Nam ut aliquet leo. Nunc tortor dolor, ultrices sit amet vestibulum vitae, rhoncus eget mi. Proin dui orci, mollis efficitur dolor quis, vulputate viverra nulla. Etiam euismod vehicula diam, et tempor erat cursus malesuada. Sed fringilla, sem eget porta rhoncus, tellus lectus porta leo, sed lobortis lorem lectus quis lacus. Ut laoreet semper ante, placerat posuere mauris euismod laoreet.
 
@@ -190,7 +190,7 @@ Mauris suscipit, sapien at pellentesque condimentum, erat magna condimentum sem,
 
 Phasellus ullamcorper quam turpis, ac tristique ligula pretium at. Integer non fringilla neque, vitae sodales sapien. Phasellus lacus nibh, pulvinar at turpis a, pharetra placerat lacus. Maecenas vel dignissim mi. Pellentesque sed euismod quam. Sed sit amet hendrerit odio, vel elementum ex. Vestibulum ut enim ac quam maximus pellentesque. Maecenas nec tortor congue, rutrum odio eget, sagittis tellus. Donec venenatis erat libero, id placerat ligula imperdiet in. Quisque varius molestie tempor. Proin scelerisque nisl sit amet risus vestibulum congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Suspendisse faucibus eleifend ligula tincidunt cursus. Sed sed est a quam dapibus aliquet. Aliquam vitae cursus lacus. Vivamus tempor volutpat orci a aliquet. Ut a enim nec orci consectetur pretium aliquam id quam. Nulla viverra vehicula urna vel bibendum. Fusce nec augue venenatis, finibus diam a, bibendum tortor. Donec malesuada, dui id aliquam placerat, dui ipsum placerat tortor, eget accumsan nisi est at tortor. Aliquam varius hendrerit aliquet. Duis commodo erat eu facilisis porttitor.</mutableString>
+Suspendisse faucibus eleifend ligula tincidunt cursus. Sed sed est a quam dapibus aliquet. Aliquam vitae cursus lacus. Vivamus tempor volutpat orci a aliquet. Ut a enim nec orci consectetur pretium aliquam id quam. Nulla viverra vehicula urna vel bibendum. Fusce nec augue venenatis, finibus diam a, bibendum tortor. Donec malesuada, dui id aliquam placerat, dui ipsum placerat tortor, eget accumsan nisi est at tortor. Aliquam varius hendrerit aliquet. Duis commodo erat eu facilisis porttitor.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -235,6 +235,25 @@ Suspendisse faucibus eleifend ligula tincidunt cursus. Sed sed est a quam dapibu
             </objects>
             <point key="canvasLocation" x="3280.8000000000002" y="124.58770614692655"/>
         </scene>
+        <!--About-->
+        <scene sceneID="Yup-ND-E2I">
+            <objects>
+                <viewController id="KRA-nf-nUv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZI-Hw-eSS"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Gm-fc-9qP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pl4-kC-vLM">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="questionMark" selectedImage="questionMark" id="PgZ-Zf-VYu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqe-Ux-rt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2490" y="2436"/>
+        </scene>
         <!--Random-->
         <scene sceneID="KfR-Se-p1y">
             <objects>
@@ -272,7 +291,7 @@ Suspendisse faucibus eleifend ligula tincidunt cursus. Sed sed est a quam dapibu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1k-dN-hU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490.4000000000001" y="1690.704647676162"/>
+            <point key="canvasLocation" x="2884" y="1689"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="HkB-i2-Fg9">
@@ -368,6 +387,7 @@ Suspendisse faucibus eleifend ligula tincidunt cursus. Sed sed est a quam dapibu
                         <segue destination="ZAb-NX-ZEm" kind="relationship" relationship="viewControllers" id="9ih-Qs-gML"/>
                         <segue destination="aMP-GQ-yeW" kind="relationship" relationship="viewControllers" id="WAA-9n-XAM"/>
                         <segue destination="av9-na-oZT" kind="relationship" relationship="viewControllers" id="K4v-Gu-AYp"/>
+                        <segue destination="KRA-nf-nUv" kind="relationship" relationship="viewControllers" id="b3y-dK-xUR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoX-Pi-8TK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -377,5 +397,6 @@ Suspendisse faucibus eleifend ligula tincidunt cursus. Sed sed est a quam dapibu
     </scenes>
     <resources>
         <image name="Beer" width="48" height="32"/>
+        <image name="questionMark" width="25" height="25"/>
     </resources>
 </document>

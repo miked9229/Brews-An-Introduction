@@ -56,9 +56,9 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         
         let guestLoginButton = UIButton(type: .system)
         guestLoginButton.translatesAutoresizingMaskIntoConstraints = false
-        guestLoginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 5.0)
+        guestLoginButton.backgroundColor = UIColor(colorLiteralRed: 61/255, green: 91/255, blue: 151/255, alpha: 10.0)
         guestLoginButton.setTitle("Login As Guest", for: .normal)
-        guestLoginButton.titleLabel?.textColor = .black
+        guestLoginButton.titleLabel?.textColor = .white
         guestLoginButton.addTarget(self, action: #selector(signIntoFirebaseAnnonymously), for: .touchUpInside)
         view.addSubview(guestLoginButton)
 
